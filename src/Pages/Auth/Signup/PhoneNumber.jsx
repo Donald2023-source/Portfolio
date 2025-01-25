@@ -13,8 +13,8 @@ const PhoneNumber = () => {
             <img className='h-full object-cover w-full' src={img1} alt='sign up img'/>
         </div>
 
-        <div className='lg:w-[40%] md:w-[70%] w-fit lg:static left-0 right-0 absolute h-full flex flex-col items-center justify-center px-4 top-0 z-50 mx-auto'>
-            <div className='lg:w-[80%] shadow-lg justify-center bg-white lg:mx-auto px-4 rounded-lg py-8 flex flex-col gap-12 items-center'>
+        <div className='lg:w-[40%] md:w-[70%] w-fit lg:static left-0 right-0 absolute h-full flex flex-col items-center justify-center px-1 top-0 z-50 mx-auto'>
+            <div className='lg:w-[80%] shadow-lg justify-center bg-white lg:mx-auto px-4 rounded-lg py-20 flex flex-col gap-14 items-center'>
                 <div className='flex flex-col gap-2'>
                   <img className='h-10' src={logo} alt='logo'/>
                   <h2 className='font-semibold text-2xl'>Hello! Welcome</h2>
@@ -32,7 +32,7 @@ const PhoneNumber = () => {
                       </fieldset>
                    </form>
 
-                   <p className='text-sm text-gray-400'>By continuing, you confirm ownership of this phone number and agree to receive automated texts to verify it. Standard message and data rates may apply.</p>
+                   <p className='lg:text-sm text-xs text-gray-400'>By continuing, you confirm ownership of this phone number and agree to receive automated texts to verify it. Standard message and data rates may apply.</p>
 
                    <button className='p-3 border w-[80%] bg-mainColor font-semibold flex items-center justify-center mx-auto'>Continue</button>
                    <p className='text-center'>Already Have an Account? <Link className='text-myGreen font-semibold'>Login</Link></p>

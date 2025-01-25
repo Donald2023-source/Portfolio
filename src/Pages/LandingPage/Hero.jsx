@@ -5,6 +5,7 @@ import user2 from '../../assets/Frame 1099.png'
 import user3 from '../../assets/Frame 1099(1).png'
 import square from '../../assets/Group (1).png'
 import { motion } from 'framer-motion'
+import { Link } from 'react-router-dom'
 
 const Hero = () => {
   return (
@@ -31,7 +32,7 @@ const Hero = () => {
             animate={{x: 0}}
             transition={{duration: 1}}
             whileHover={{scale: 1.02}}
-            className='lg:py-3 py-4 px-7 lg:px-12 font-bold bg-mainColor'>Join Now</motion.button>
+            className='lg:py-3 py-4 px-7 lg:px-12 font-bold bg-mainColor'><Link to={'/auth/signup'}>Join Now</Link></motion.button>
 
             <div className='flex lg:flex-row flex-col items-center gap-3'>
                 <span className='flex'>
