@@ -10,7 +10,8 @@ export default {
         mainColor: "#FFC107",
         myGreen: "#006400", 
         light: "#D9D9D9", 
-        silver: "#E5E5E5"
+        silver: "#E5E5E5", 
+        appGray: "#00000080"
       }
     },
   },
