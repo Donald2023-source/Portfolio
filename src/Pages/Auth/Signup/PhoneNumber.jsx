@@ -1,12 +1,29 @@
-import React from 'react'
+import React, { useState } from 'react'
 import aside from '../../../Components/Aside'
 import Aside from '../../../Components/Aside'
 import img1 from '../../../assets/Frame 1147.png'
 import logo from '../../../assets/logo.jpg'
 import { BiPhone } from 'react-icons/bi'
-import { Link } from 'react-router-dom'
+import { Link, useNavigate } from 'react-router-dom'
 
 const PhoneNumber = () => {
+
+  const [PhoneNumber, setPhoneNumber] = useState('');
+
+  const router = useNavigate()
+
+  localStorage.setItem('phoneNumber', JSON.stringify(PhoneNumber))
+
+  const handleSubmit = (e) => {
+    e.preventDefault()
+    
+    if(PhoneNumber.length === 11){
+      router('/auth/confirm')
+    } else {
+      console.log('Please enter a valid phone number')
+    }
+      
+  }
   return (
     <div className='w-full h-screen flex items-center relative gap-3'>
         <div className='lg:w-[60%] w-full h-full border' >
@@ -27,14 +44,14 @@ const PhoneNumber = () => {
                         <label className='text-sm absolute -top-2 left-5 bg-white px-3' htmlFor="">Mobile Number</label>
                         <span className='flex items-center'>
                           <BiPhone className='text-gray-400' />
-                          <input className='outline-none py-2 px-3' type="text" placeholder='Enter your mobile number' />
+                          <input onChange={(e) => setPhoneNumber(e.target.value)} className='outline-none py-2 px-3' type="text" placeholder='Enter your mobile number' />
                         </span>
                       </fieldset>
                    </form>
 
                    <p className='lg:text-sm text-xs text-gray-400'>By continuing, you confirm ownership of this phone number and agree to receive automated texts to verify it. Standard message and data rates may apply.</p>
 
-                   <button className='p-3 border w-[80%] bg-mainColor font-semibold flex items-center justify-center mx-auto'>Continue</button>
+                   <button onClick={handleSubmit} className='p-3 border w-[80%] bg-mainColor font-semibold flex items-center justify-center mx-auto'>Continue</button>
                    <p className='text-center'>Already Have an Account? <Link className='text-myGreen font-semibold'>Login</Link></p>
                 </div>
             </div>

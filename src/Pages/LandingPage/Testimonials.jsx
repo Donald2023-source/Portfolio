@@ -24,7 +24,7 @@ const Testimonials = () => {
         <div className='flex lg:flex-row flex-col items-center relative inset-0 '>
             <div className='flex lg:flex-row flex-col items-center mx-auto justify-center gap-10'>
                 {testimonials.slice(currentIndex, currentIndex + 2).map((item)=> (
-                    <div className='border bg-white shadow-lg w-[90%] mx-auto lg:w-[40%] p-5 flex flex-col gap-2 items-center' key={item.id}>
+                    <div  className='border bg-white shadow-lg w-[90%] mx-auto lg:w-[40%] p-5 flex flex-col gap-2 items-center' key={item.id}>
                         <img src={Quotes} alt="" />
                         <p className='lg:text-sm text-xs text-center leading-[1.5rem]'>{item.text}</p>
                         <span className='flex'>

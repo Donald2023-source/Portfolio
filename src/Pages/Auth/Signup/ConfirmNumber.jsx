@@ -7,6 +7,9 @@ import { BiPhone } from 'react-icons/bi'
 import { Link } from 'react-router-dom'
 
 const ConfirmNumber = () => {
+
+    const phoneNumber = localStorage.getItem('phoneNumber').split('"')
+    console.log('PhoneNumber', phoneNumber)
   return (
     <div className='w-full h-screen flex items-center relative gap-3'>
         <div className='lg:w-[60%] w-full h-full border' >
@@ -18,7 +21,7 @@ const ConfirmNumber = () => {
                 <div className='flex flex-col gap-2'>
                   <img className='h-10 w-40' src={logo} alt='logo'/>
                   <h2 className='font-semibold text-2xl'>Confirm your number</h2>
-                  <p>Enter the number sent to: your number</p>   
+                  <p>Enter the number sent to {phoneNumber ? phoneNumber : 'your phone number'}</p>   
                 </div>
                 <div className='flex gap-2'>
                     {[...Array(6)].map((_, index) => (
