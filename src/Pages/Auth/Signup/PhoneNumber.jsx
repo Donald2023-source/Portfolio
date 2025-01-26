@@ -5,10 +5,12 @@ import img1 from '../../../assets/Frame 1147.png'
 import logo from '../../../assets/logo.jpg'
 import { BiPhone } from 'react-icons/bi'
 import { Link, useNavigate } from 'react-router-dom'
-
+import 'react-toastify/dist/ReactToastify.css';
+import { toast } from 'react-toastify'
 const PhoneNumber = () => {
 
   const [PhoneNumber, setPhoneNumber] = useState('');
+  const [message, setMessage] = useState('')
 
   const router = useNavigate()
 
@@ -19,8 +21,12 @@ const PhoneNumber = () => {
     
     if(PhoneNumber.length === 11){
       router('/auth/confirm')
-    } else {
+    } else if(PhoneNumber.length === 0) {
+      toast.error("Phone number cannot be empty")
+    } 
+    else {
       console.log('Please enter a valid phone number')
+      toast.error("Phone Number not valid")
     }
       
   }

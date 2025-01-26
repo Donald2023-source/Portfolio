@@ -7,9 +7,11 @@ import Dashboard from './Pages/UserDashboard/Pages/Dashboard'
 
 import PhoneNumber from './Pages/Auth/Signup/PhoneNumber'
 import ConfirmNumber from './Pages/Auth/Signup/ConfirmNumber'
+import { ToastContainer } from 'react-toastify'
 const App = () => {
   return (
    <BrowserRouter>
+   <ToastContainer />
       <Routes>
         <Route path='/' element={<Layout><Landingpage/></Layout>} />
         <Route path='/dashboard' element={<UserLayout><Dashboard/></UserLayout>}/>
