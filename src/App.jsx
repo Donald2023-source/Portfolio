@@ -6,6 +6,7 @@ import UserLayout from './layouts/UserLayout'
 import Dashboard from './Pages/UserDashboard/Pages/Dashboard'
 
 import PhoneNumber from './Pages/Auth/Signup/PhoneNumber'
+import ConfirmNumber from './Pages/Auth/Signup/ConfirmNumber'
 const App = () => {
   return (
    <BrowserRouter>
@@ -13,6 +14,7 @@ const App = () => {
         <Route path='/' element={<Layout><Landingpage/></Layout>} />
         <Route path='/dashboard' element={<UserLayout><Dashboard/></UserLayout>}/>
         <Route path="/auth/signup" element={<PhoneNumber /> } />
+        <Route path='/auth/confirm' element={<ConfirmNumber />} />
       </Routes>
    </BrowserRouter>
   )
