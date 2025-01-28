@@ -9,7 +9,7 @@ import { Link } from 'react-router-dom'
 const ConfirmNumber = () => {
 
     const phoneNumber = localStorage.getItem('phoneNumber').split('"')
-    console.log('PhoneNumber', phoneNumber)
+    // console.log('PhoneNumber', phoneNumber)
   return (
     <div className='w-full h-screen flex items-center relative gap-3'>
         <div className='lg:w-[60%] w-full h-full border' >
