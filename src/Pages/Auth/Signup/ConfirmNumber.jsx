@@ -44,8 +44,6 @@ const ConfirmNumber = () => {
                     
                 </div>
                 <h4 className='text-mainColor cursor-pointer font-semibold'>Send code again</h4>
-
-                    
               
             </div>
         </div>
