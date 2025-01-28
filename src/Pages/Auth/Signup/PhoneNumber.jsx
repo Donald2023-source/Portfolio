@@ -28,7 +28,6 @@ const PhoneNumber = () => {
       console.log('Please enter a valid phone number')
       toast.error("Phone Number not valid")
     }
-      
   }
   return (
     <div className='w-full h-screen flex items-center relative gap-3'>
@@ -52,7 +51,7 @@ const PhoneNumber = () => {
                           <BiPhone className='text-gray-400' />
                           <input onChange={(e) => setPhoneNumber(e.target.value)} className='outline-none py-2 px-3' type="text" placeholder='Enter your mobile number' />
                         </span>
-                      </fieldset>
+                      </fieldset> 
                    </form>
 
                    <p className='lg:text-sm text-xs text-gray-400'>By continuing, you confirm ownership of this phone number and agree to receive automated texts to verify it. Standard message and data rates may apply.</p>
