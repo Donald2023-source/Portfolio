@@ -4,12 +4,13 @@ import Aside from '../../../Components/Aside'
 import img1 from '../../../assets/Frame 1147.png'
 import logo from '../../../assets/logo.jpg'
 import { BiPhone } from 'react-icons/bi'
-import { Link } from 'react-router-dom'
+import { Link, useNavigate } from 'react-router-dom'
 
 const ConfirmNumber = () => {
 
     const phoneNumber = localStorage.getItem('phoneNumber').split('"')
     // console.log('PhoneNumber', phoneNumber)
+
   return (
     <div className='w-full h-screen flex items-center relative gap-3'>
         <div className='relative lg:w-[60%] w-full h-full border' >
@@ -44,6 +45,7 @@ const ConfirmNumber = () => {
                     
                 </div>
                 <h4 className='text-mainColor cursor-pointer font-semibold'>Send code again</h4>
+                <h4 className='text-mainColor cursor-pointer font-semibold'><Link to={'/auth/signup'}>Edit Phone Number</Link></h4>
             </div>
         </div>
         <div className='bg-black/70 lg:hidden h-full w-full absolute top-0 left-0'/>
