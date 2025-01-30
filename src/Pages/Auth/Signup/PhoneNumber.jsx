@@ -63,7 +63,7 @@ const PhoneNumber = () => {
         </div>
         <div className='bg-black/70 lg:hidden h-full w-full absolute top-0 left-0'/>
     </div>
-  )
+  ) 
 }
 
 export default PhoneNumber
