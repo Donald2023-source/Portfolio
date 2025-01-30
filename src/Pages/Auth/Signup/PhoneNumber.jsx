@@ -31,7 +31,7 @@ const PhoneNumber = () => {
   }
   return (
     <div className='w-full h-screen flex items-center relative gap-3'>
-        <div className='lg:w-[60%] w-full h-full border' >
+        <div className='lg:w-[60%] relative w-full h-full border' >
             <img className='h-full object-cover w-full' src={img1} alt='sign up img'/>
         </div>
 
@@ -61,6 +61,7 @@ const PhoneNumber = () => {
                 </div>
             </div>
         </div>
+        <div className='bg-black/70 lg:hidden h-full w-full absolute top-0 left-0'/>
     </div>
   )
 }

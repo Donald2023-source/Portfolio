@@ -12,12 +12,12 @@ const ConfirmNumber = () => {
     // console.log('PhoneNumber', phoneNumber)
   return (
     <div className='w-full h-screen flex items-center relative gap-3'>
-        <div className='lg:w-[60%] w-full h-full border' >
+        <div className='relative lg:w-[60%] w-full h-full border' >
             <img className='h-full object-cover w-full' src={img1} alt='sign up img'/>
         </div>
 
         <div className='lg:w-[40%] md:w-[70%] w-fit lg:static left-0 right-0 absolute h-full flex flex-col items-center justify-center px-1 top-0 z-50 mx-auto'>
-            <div className='lg:w-[80%] shadow-lg justify-center bg-white lg:mx-auto px-8 rounded-lg py-20 flex flex-col gap-10 items-center'>
+            <div className='lg:w-[80%] shadow-lg justify-center bg-white lg:mx-auto px-14 rounded-lg py-20 flex flex-col gap-10 items-center'>
                 <div className='flex flex-col gap-2'>
                   <img className='h-10 w-40' src={logo} alt='logo'/>
                   <h2 className='font-semibold text-2xl'>Confirm your number</h2>
@@ -44,9 +44,9 @@ const ConfirmNumber = () => {
                     
                 </div>
                 <h4 className='text-mainColor cursor-pointer font-semibold'>Send code again</h4>
-              
             </div>
         </div>
+        <div className='bg-black/70 lg:hidden h-full w-full absolute top-0 left-0'/>
     </div>
   )
 }
