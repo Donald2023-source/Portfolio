@@ -50,18 +50,18 @@ const Navbar = () => {
                 </div>
 
                      <span className={isSelect ? "block absolute translate-y-0 transition duration-700 ": "absolute -translate-y-96 transition rduration-700"}>
-                        {languages.map((language) => (
-                        <h3 className='cursor-pointer hover:text-mainColor transition ease-in-out w-32 border-b p-3 mx-7' key={language.id} onClick={() => selectLanguage(language)}>{language}</h3>
+                        {languages.map((language, idx) => (
+                        <h3  className='cursor-pointer hover:text-mainColor transition ease-in-out w-32 border-b p-3 mx-7' key={idx} onClick={() => selectLanguage(language)}>{language}</h3>
                         ))}
                      </span>    
                 </div>
               
-                <motion.ul
+                <motion.div
                 className={nav ? 'flex lg:flex-row bg-white lg:relative lg:inset-0 lg:shadow-none shadow pr-20 pl-2 py-5 absolute top-8 flex-col gap-8  lg:gap-24' : "hidden lg:flex gap-20"}>
                     {navLinks.map((item) => (
                            <NavLink className={({isActive}) => `px-1 w-24 hover:text-mainColor transition ${isActive? "border-b-2" : ""}`} to={item.path} key={item.id}>{item.name}</NavLink>
                     ))}
-                </motion.ul>
+                </motion.div>
 
                 </section>
                 <span className='lg:flex hidden gap-5'>
