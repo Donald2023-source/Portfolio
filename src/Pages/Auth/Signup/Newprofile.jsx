@@ -25,20 +25,19 @@ const Newprofile = () => {
 
                 <div className='flex flex-col gap-4'>
                    <form action="">
-                      <fieldset className='flex flex-col rounded-lg relative border p-2 '>
-                        <label className='text-sm absolute -top-2 left-5 bg-white px-3' htmlFor="">Mobile Number</label>
-                        <span className='flex items-center'>
+                   <fieldset className='flex flex-col rounded-lg relative border px-2 pb-2'>
+                      <legend className='px-4 text-silver'>Full Name</legend>
+                        <span className='flex items-center'>    
                           <BiPhone className='text-gray-400' />
-                          <input className='outline-none py-2 px-3' type="text" placeholder='Enter your mobile number' />
+                          <input className='outline-none py-1 px-3' type="text" placeholder='Enter your full name' />
                         </span>
                       </fieldset> 
 
-                      <fieldset className='flex flex-col rounded-lg relative border p-2 '>
-                        <legend>New</legend>
-                        <label className='text-sm absolute -top-2 left-5 bg-white px-3' htmlFor="">Mobile Number</label>
-                        <span className='flex items-center'>
+                    <fieldset className='flex flex-col rounded-lg relative border px-2 pb-2'>
+                      <legend className='px-4 text-silver'>Full Name</legend>
+                        <span className='flex items-center'>    
                           <BiPhone className='text-gray-400' />
-                          <input className='outline-none py-2 px-3' type="text" placeholder='Enter your mobile number' />
+                          <input className='outline-none py-1 px-3' type="text" placeholder='Enter your full name' />
                         </span>
                       </fieldset> 
                    </form>
