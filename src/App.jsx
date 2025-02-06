@@ -8,6 +8,7 @@ import { motion } from 'framer-motion'
 import PhoneNumber from './Pages/Auth/Signup/PhoneNumber'
 import ConfirmNumber from './Pages/Auth/Signup/ConfirmNumber'
 import { ToastContainer } from 'react-toastify'
+import Newprofile from './Pages/Auth/Signup/Newprofile'
 const App = () => {
   return (
   <motion.div 
@@ -22,6 +23,7 @@ const App = () => {
             <Route path='/dashboard' element={<UserLayout><Dashboard/></UserLayout>}/>
             <Route path="/auth/signup" element={<PhoneNumber /> } />
             <Route path='/auth/confirm' element={<ConfirmNumber />} />
+            <Route path='/auth/newprofile' element={<Newprofile />} />
           </Routes>
       </BrowserRouter>
    </motion.div>
