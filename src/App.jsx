@@ -9,6 +9,7 @@ import PhoneNumber from './Pages/Auth/Signup/PhoneNumber'
 import ConfirmNumber from './Pages/Auth/Signup/ConfirmNumber'
 import { ToastContainer } from 'react-toastify'
 import Newprofile from './Pages/Auth/Signup/Newprofile'
+import Agentlogin from './Pages/Auth/Signup/Agentlogin'
 const App = () => {
   return (
   <motion.div 
@@ -24,6 +25,7 @@ const App = () => {
             <Route path="/auth/signup" element={<PhoneNumber /> } />
             <Route path='/auth/confirm' element={<ConfirmNumber />} />
             <Route path='/auth/newprofile' element={<Newprofile />} />
+            <Route path='/auth/agentLogin' element={<Agentlogin />} />
           </Routes>
       </BrowserRouter>
    </motion.div>
