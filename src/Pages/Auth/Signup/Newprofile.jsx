@@ -15,37 +15,50 @@ const Newprofile = () => {
             <img className='h-full object-cover w-full' src={img1} alt='sign up img'/>
         </div>
 
-        <div className='lg:w-[40%] md:w-[70%] w-fit lg:static left-0 right-0 absolute h-full flex flex-col items-center justify-center px-1 top-0 z-50 mx-auto'>
-            <div className='lg:w-[80%] shadow-lg justify-center bg-white lg:mx-auto px-4 rounded-lg py-20 flex flex-col gap-14 items-center'>
+        <div className='lg:w-[40%] md:w-[70%] w-[85%] lg:static left-0 right-0 absolute h-full flex flex-col items-center justify-center px-1 top-0 z-50 mx-auto'>
+            <div className='lg:w-[80%] w-full shadow-lg justify-center bg-white lg:mx-auto px-4 rounded-lg py-5 md:py-8 flex flex-col gap-8 items-center'>
                 <div className='flex flex-col gap-2'>
                   <img className='h-10' src={logo} alt='logo'/>
-                  <h2 className='font-semibold text-2xl'>Hello! Welcome</h2>
-                  <p>First Add your Phone Number</p>   
+                  <h2 className='font-semibold text-2xl'>Set Up Your Profile</h2>
+                  <p>The Info needs to be accurate</p>   
                 </div>
 
-                <div className='flex flex-col gap-4'>
-                   <form action="">
+                <div className='flex flex-col gap-4 w-[100%]'>
+                   <form className='flex flex-col gap-5' action="">
                    <fieldset className='flex flex-col rounded-lg relative border px-2 pb-2'>
-                      <legend className='px-4 text-silver'>Full Name</legend>
+                      <legend className='px-4 text-gray-500 text-sm'>Full Name</legend>
                         <span className='flex items-center'>    
                           <BiPhone className='text-gray-400' />
-                          <input className='outline-none py-1 px-3' type="text" placeholder='Enter your full name' />
+                          <input className='outline-none  px-3' type="text" placeholder='Enter your full name' />
                         </span>
                       </fieldset> 
 
                     <fieldset className='flex flex-col rounded-lg relative border px-2 pb-2'>
-                      <legend className='px-4 text-silver'>Full Name</legend>
+                      <legend className='px-4 text-gray-500 text-sm'>Reg No</legend>
                         <span className='flex items-center'>    
                           <BiPhone className='text-gray-400' />
-                          <input className='outline-none py-1 px-3' type="text" placeholder='Enter your full name' />
+                          <input className='outline-none py-1 px-3' type="text" placeholder='Enter your Keke Reg No' />
+                        </span>
+                      </fieldset> 
+
+                    <fieldset className='flex flex-col rounded-lg relative border px-2 pb-2'>
+                      <legend className='px-4 text-gray-500 text-sm'>Create Password</legend>
+                        <span className='flex items-center'>    
+                          <BiPhone className='text-gray-400' />
+                          <input className='outline-none py-1 px-3' type="text" placeholder='Create a strong password' />
+                        </span>
+
+                      </fieldset> 
+                    <fieldset className='flex flex-col rounded-lg relative border px-2 pb-2'>
+                      <legend className='px-4 text-gray-500 text-sm'>Confirm Password</legend>
+                        <span className='flex items-center'>    
+                          <BiPhone className='text-gray-400' />
+                          <input className='outline-none py-1 px-3' type="text" placeholder='Confirm Password' />
                         </span>
                       </fieldset> 
                    </form>
 
-                   <p className='lg:text-sm text-xs text-gray-400'>By continuing, you confirm ownership of this phone number and agree to receive automated texts to verify it. Standard message and data rates may apply.</p>
-
                    <button className='p-3 border w-[80%] bg-mainColor font-semibold flex items-center justify-center mx-auto'>Continue</button>
-                   <p className='text-center'>Already Have an Account? <Link className='text-myGreen font-semibold'>Login</Link></p>
                 </div>
             </div>
         </div>
