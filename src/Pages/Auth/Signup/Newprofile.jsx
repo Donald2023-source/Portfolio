@@ -15,7 +15,7 @@ const Newprofile = () => {
             <img className='h-full object-cover w-full' src={img1} alt='sign up img'/>
         </div>
 
-        <div className='lg:w-[40%] md:w-[70%] w-[85%] lg:static left-0 right-0 absolute h-full flex flex-col items-center justify-center px-1 top-0 z-50 mx-auto'>
+        <div className='lg:w-[40%] md:w-[70%] w-[88%] lg:static left-0 right-0 absolute h-full flex flex-col items-center justify-center px-1 top-0 z-50 mx-auto'>
             <div className='lg:w-[80%] w-full shadow-lg justify-center bg-white lg:mx-auto px-4 rounded-lg py-5 md:py-8 flex flex-col gap-8 items-center'>
                 <div className='flex flex-col gap-2'>
                   <img className='h-10' src={logo} alt='logo'/>
