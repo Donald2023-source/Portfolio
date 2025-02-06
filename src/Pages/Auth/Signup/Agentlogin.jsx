@@ -4,12 +4,12 @@ import logo from '../../../assets/logo.jpg'
 import { BiPhone } from 'react-icons/bi'
 const Agentlogin = () => {
   return (
-    <div className='w-full overflow-hidden h-full'>
+    <div className='w-full h-screen overflow-hidden'>
       <div className='w-full relative h-full'>
         <img className='w-full object-cover h-full' src={img1} alt='Bg img' />
       </div>
 
-        <div className='lg:w-[45%] md:w-[70%] w-[88%] lg:absolute left-0 right-0 absolute h-full flex flex-col items-center justify-center px-1 top-0 z-50 mx-auto'>
+        <div className='lg:w-[45%] md:w-[70%] w-[88%] lg:absolute left-0 right-0 absolute h-full flex flex-col items-center justify-center px-1 top-0 z-50 mx-auto overflow-hidden'>
             <div className='lg:w-[80%] w-full shadow-lg justify-center bg-white lg:mx-auto px-4 rounded-lg py-5 md:py-8 flex flex-col gap-10 items-center'>
                 <div className='flex flex-col gap-2'>
                     <img className='h-10' src={logo} alt='logo'/>
@@ -46,7 +46,7 @@ const Agentlogin = () => {
                         </div>
                     </form>
 
-                    <button className='p-3 border w-[80%] bg-mainColor font-semibold flex items-center justify-center mx-auto'>Continue</button>
+                    <button className='p-3 border my-5 w-[80%] bg-mainColor font-semibold flex items-center justify-center mx-auto'>Continue</button>
 
                 </div>
             </div>
