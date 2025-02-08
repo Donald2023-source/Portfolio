@@ -9,16 +9,15 @@ const Agentlogin = () => {
         <img className='w-full object-cover h-full' src={img1} alt='Bg img' />
       </div>
 
-        <div className='lg:w-[45%] md:w-[70%] w-[88%] lg:absolute left-0 right-0 absolute h-full flex flex-col items-center justify-center px-1 top-0 z-50 mx-auto overflow-hidden'>
+        <div className='lg:w-[45%] md:w-[70%] w-[95%] lg:absolute left-0 right-0 absolute h-full flex flex-col items-center justify-center px-1 top-0 z-50 mx-auto overflow-hidden'>
             <div className='lg:w-[80%] w-full shadow-lg justify-center bg-white lg:mx-auto px-4 rounded-lg py-5 md:py-8 flex flex-col gap-10 items-center'>
                 <div className='flex flex-col gap-2'>
                     <img className='h-10' src={logo} alt='logo'/>
                     <h2 className='font-semibold text-2xl'>Agent Login</h2>
-
                 </div>
 
                 <div className='w-full flex flex-col items-center'>
-                    <form className='w-[90%] flex flex-col gap-6' action="">
+                    <form className='w-[100%] flex flex-col gap-6' action="">
                         <fieldset className='flex flex-col rounded-lg relative border px-2 pb-2'>
                             <legend className='px-4 text-gray-500 text-sm'>Agent ID</legend>
                                 <span className='flex items-center'>    
@@ -35,7 +34,7 @@ const Agentlogin = () => {
                                 </span>
                         </fieldset>
 
-                        <div className='flex items-center justify-between'>
+                        <div className='flex items-center justify-between px-2'>
                             <fieldset className='flex gap-2'>
                                 <input type="checkbox" />
                                 <p>Remeber Me</p>
