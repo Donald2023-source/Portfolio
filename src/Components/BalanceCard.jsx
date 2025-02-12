@@ -1,12 +1,15 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { FaEye } from 'react-icons/fa'
 import Naira from '../assets/naira.png'
 const BalanceCard = () => {
+
+  const [isBalance, setIsBalance] = useState(false)
+
   return (
     <div className='border w-[30%] rounded-lg p-5 flex flex-col space-y-5'>
       <div className='flex items-center justify-between'>
         <h2>Current Balance</h2>
-          <FaEye color='gray' />
+          
       </div>
 
     <div className='flex items-center gap-3'>
