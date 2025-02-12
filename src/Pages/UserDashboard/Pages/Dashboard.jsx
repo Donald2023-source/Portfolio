@@ -7,7 +7,7 @@ const Dashboard = () => {
             <TopBar name={'Sonia'} />
 
             <div>
-                <BalanceCard />
+                <span className="lg:block hidden md:block"><BalanceCard /></span>
             </div>
         </div>
     )
