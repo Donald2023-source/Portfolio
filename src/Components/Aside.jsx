@@ -37,7 +37,7 @@ const Aside = () => {
     ]
     
   return (
-      <aside className='lg:w-[20%] w-[70%] top-0 z-[100] bg-white fixed shadow-md lg:text-md text-xs  p-5 h-[100vh]'>
+      <aside className='lg:w-[22%] w-[70%] top-0 z-[100] bg-white fixed shadow-md lg:text-md text-xs  p-5 h-[100vh]'>
           <img className='h-10 mb-5' src={logo} alt="" />
         <div className='flex flex-col justify-between h-[80%] lg:h-[90%]'>
 
