@@ -16,16 +16,16 @@ const BalanceCard = () => {
         <h2>Current Balance</h2>
           {
             isBalance ? (
-              <FaEye onClick={handleToggle} color='gray' />
+              <FaEye className='cursor-pointer' onClick={handleToggle} color='gray' />
             ) : (
-              <GoEyeClosed onClick={handleToggle} color='gray' />
+              <GoEyeClosed className='cursor-pointer' onClick={handleToggle} color='gray' />
             )
           }
       </div>
 
     <div className='flex items-center gap-3'>
       <img className='h-6' src={Naira} alt="" />
-      <p className='font-bold text-2xl'>20,000</p>
+      <p className='font-bold text-2xl'>{isBalance ? '20,000' : '****'}</p>
     </div>
 
     </div>
