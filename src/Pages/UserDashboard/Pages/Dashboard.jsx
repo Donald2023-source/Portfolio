@@ -3,7 +3,7 @@ import TopBar from "../../../Components/TopBar"
 
 const Dashboard = () => {
     return (
-        <div className="py-2 w-full ">
+        <div className="py-2 w-full bg-silver">
             <TopBar name={'Sonia'} />
 
             <div>
