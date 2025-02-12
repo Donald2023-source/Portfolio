@@ -1,15 +1,26 @@
 import React, { useState } from 'react'
 import { FaEye } from 'react-icons/fa'
+import { GoEyeClosed } from "react-icons/go";
 import Naira from '../assets/naira.png'
 const BalanceCard = () => {
 
   const [isBalance, setIsBalance] = useState(false)
-
+  
+  const handleToggle = () => {
+    setIsBalance(!isBalance)
+  }
+  
   return (
     <div className='border w-[30%] rounded-lg p-5 flex flex-col space-y-5'>
       <div className='flex items-center justify-between'>
         <h2>Current Balance</h2>
-          
+          {
+            isBalance ? (
+              <FaEye onClick={handleToggle} color='gray' />
+            ) : (
+              <GoEyeClosed onClick={handleToggle} color='gray' />
+            )
+          }
       </div>
 
     <div className='flex items-center gap-3'>
