@@ -2,6 +2,7 @@ import { useState } from 'react'
 import Quotes from '../../assets/Vector (5).png'
 import arrow from '../../assets/Frame 1112.png'
 import { testimonials } from '../../data/data'
+import { Link } from 'react-router-dom'
 import { motion } from 'framer-motion'
 
 const Testimonials = () => {
@@ -40,13 +41,13 @@ const Testimonials = () => {
                     </div>
                 ))}
             </div>
-            <img onClick={handleNext} className='lg:absolute lg:my-0 my-5 lg:h-fit h-8 left-[87%] lg:left-[93%] cursor-pointer' src={arrow} alt="" />
+            <img onClick={handleNext} className='lg:absolute lg:my-0 my-5 lg:h-10 h-8 left-[90%] lg:left-[95%] cursor-pointer' src={arrow} alt="" />
         </div>
         </div>
 
         <div className='flex lg:gap-20 gap-5 justify-center items-center py-10'>
             <h3 className='font-semibold lg:text-xl'>Want to begin?</h3>
-            <button className='py-2 px-10 text-white border bg-myGreen'>Get Started</button>
+            <button className='py-2 px-10 text-white border bg-myGreen'><Link to={'/auth/signup'}>Get Started</Link></button>
         </div>
     </motion.div>
   )

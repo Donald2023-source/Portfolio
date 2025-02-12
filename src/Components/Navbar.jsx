@@ -3,6 +3,7 @@ import logo from '../assets/logo.jpg'
 import {NavLink}  from 'react-router-dom'
 import { FaArrowCircleDown, FaBars, FaGlobe } from 'react-icons/fa'
 import { AnimatePresence, motion } from 'framer-motion'
+import { Link } from 'react-router-dom'
 
 const Navbar = () => {
     const languages = ["English", "Hausa", "Igbo"]
@@ -65,7 +66,7 @@ const Navbar = () => {
 
                 </section>
                 <span className='lg:flex hidden gap-5'>
-                    <button className='p-4 text-mainColor text-lg'>Login</button>
+                    <button className='p-4 text-mainColor text-lg'><Link to={'/auth/agentLogin'}>Login</Link></button>
 
                     <AnimatePresence>
                     <motion.button
@@ -73,7 +74,7 @@ const Navbar = () => {
                     animate={{y: 0}}
                     exit={{y: -100}}
                     transition={{duration: 1.5}}
-                     className='bg-mainColor p-4 rounded-2xl text-white'>Get Started</motion.button>
+                     className='bg-mainColor p-4 rounded-2xl text-white'><Link to={'/auth/signup'}>Get Started</Link></motion.button>
                      </AnimatePresence>
                 </span>
                 <FaBars className='cursor-pointer lg:hidden' onClick={handleNav} size={20}/>
