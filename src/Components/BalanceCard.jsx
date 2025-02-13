@@ -11,7 +11,7 @@ const BalanceCard = () => {
   }
   
   return (
-    <div className='border w-[30%] rounded-lg p-5 flex flex-col space-y-5'>
+    <div className='border w-[30%] bg-white rounded-lg px-5 py-4 flex flex-col space-y-5'>
       <div className='flex items-center justify-between'>
         <h2>Current Balance</h2>
           {
