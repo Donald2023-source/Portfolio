@@ -23,7 +23,7 @@ const TopBar = ({name}) => {
                     </div>
 
                     <h2 className="lg:text-xl lg:hidden flex items-center lg:text-normal text-sm gap-2">₦ 
-                        <p className="font-semibold text-normal">{isVisible ? '20,000' : '****'}</p>
+                        <p className="font-bold text-normal">{isVisible ? '20,000' : '****'}</p>
                         <p className='cursor-pointer' onClick={handleToggle}>{isVisible ? (<GoEyeClosed onClick={handleToggle} />) : (<FaEye onClick={handleToggle} />)}</p>
                     </h2>
                 </div>
