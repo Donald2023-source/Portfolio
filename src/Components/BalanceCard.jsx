@@ -2,8 +2,8 @@ import React, { useState } from 'react'
 import { FaEye } from 'react-icons/fa'
 import { GoEyeClosed } from "react-icons/go";
 import Naira from '../assets/naira.png'
-const BalanceCard = () => {
 
+const BalanceCard = () => {
   const [isBalance, setIsBalance] = useState(false)
   
   const handleToggle = () => {
