@@ -10,6 +10,7 @@ const BalanceCard = () => {
     setIsBalance(!isBalance)
   }
   
+  
   return (
     <div className='border w-[30%] bg-white rounded-lg px-5 py-4 flex flex-col space-y-5'>
       <div className='flex items-center justify-between'>
@@ -20,7 +21,7 @@ const BalanceCard = () => {
             ) : (
               <GoEyeClosed className='cursor-pointer' onClick={handleToggle} color='gray' />
             )
-          }
+          } 
       </div>
 
     <div className='flex items-center gap-3'>
