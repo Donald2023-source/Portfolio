@@ -8,7 +8,7 @@ const BalanceCard = () => {
   
   const handleToggle = () => {
     setIsBalance(!isBalance)
-  }
+  } 
   
   return (
     <div className='border w-[30%] bg-white rounded-lg px-5 py-4 flex flex-col space-y-5'>
