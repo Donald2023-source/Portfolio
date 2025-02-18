@@ -22,14 +22,14 @@ const Profile = () => {
       <div className='flex'>
         <span className='flex items-center gap-4'>
              <LuClock3 />
-             <h2>{time}</h2>
+             <h2 className='text-silver'>{time}</h2>
         </span>
       </div>
 
       <span className='flex items-center gap-6'>
-        <FiMoon size={20} />
-        <IoIosNotificationsOutline size={25} />
-        <img className='h-9' src={profile} />
+        <FiMoon  size={20} />
+        <IoIosNotificationsOutline  size={25} />
+        <img  className='h-9 hover:scale-105 transition-all' src={profile} />
       </span>
     </div>
   )
