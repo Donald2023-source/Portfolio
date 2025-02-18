@@ -1,8 +1,9 @@
+import moment from 'moment/moment'
 import React, { useState } from 'react'
 
 const Profile = () => {
-    const date = new Date()
-    console.log(date)
+    const Date = moment().format('LL')
+    console.log(Date)
 
   return (
     <div>
