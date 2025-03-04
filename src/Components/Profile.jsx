@@ -13,7 +13,7 @@ const Profile = () => {
 
     const time = moment().format('LT')
   return (
-    <div className='flex w-[70%] bg-white my-2 mx-auto justify-between px-6 py-2 rounded-full'>
+    <div className='md:flex hidden w-[70%] bg-white my-2 mx-auto justify-between px-6 py-2 rounded-full'>
       <div className='flex items-center gap-4'>
          <span><MdOutlineDateRange size={20} /></span>
          <h2 className='text-silver'>{Date}</h2>
