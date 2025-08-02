@@ -4,7 +4,7 @@ import { HiOutlineMenuAlt2 } from "react-icons/hi";
 const userLayout = ({ children }) => {
   const [nav, setNav] = useState(false);
   return (
-    <div className="h-screen bg-silver">
+    <div className="h-screen bg-silver py-3">
       <div className="flex relative items-center container ">
         <span
           className={`w-full absolute top-0 transition duration-300 z-20 ${
@@ -18,14 +18,14 @@ const userLayout = ({ children }) => {
 
         <span
           onClick={() => setNav(!nav)}
-          className="text-lg lg:hidden cursor-pointer absolute top-0 bottom-0 z-50 left-[95%]"
+          className="text-lg lg:hidden md:left-[100%] md:ml-10 md:text-xl cursor-pointer absolute top-0 bottom-0 z-50  left-[95%]"
         >
           <HiOutlineMenuAlt2 />
         </span>
 
         <div
           onClick={() => setNav(false)}
-          className="w-screen lg:ml-[26%] px-1 lg:w-[85%] relative"
+          className="w-full lg:ml-[26%] px-1 lg:w-[85%] relative"
         >
           {children}
         </div>

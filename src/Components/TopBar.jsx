@@ -10,7 +10,7 @@ const TopBar = ({name}) => {
     }
     return (
         <>
-            <div className="flex justify-between lg:text-normal text-sm lg:bg-white md:bg-white text-white lg:py-2 md:py-2 md:text-black lg:mt-0 mt-3 p-10 rounded-3xl bg-myGreen px-7 lg:shadow lg:rounded-full items-center">
+            <div className="flex justify-between lg:text-normal text-sm lg:bg-white md:bg-white text-white lg:py-2 md:py-2 md:text-black lg:mt-0 mt-3 p-10 rounded-3xl bg-myGreen px-7 lg:shadow md:flex-1 border lg:rounded-full items-center">
                 <div>
                     <h4 className="text-silver">Hello there, </h4>
                     <h4 className="font-semibold">Welcome {name}</h4>
