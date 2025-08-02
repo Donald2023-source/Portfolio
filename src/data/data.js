@@ -4,7 +4,7 @@ import user1 from '../assets/Frame 1073.png'
 import user2 from '../assets/Frame 1099.png'
 import user3 from '../assets/Frame 1099(1).png'
 import user4 from '../assets/User4.png'
-import user5 from '../assets/user5.png'
+import user5 from '../assets/User5.png'
 import user6 from '../assets/Frame 1099 (5).png'
 
 export const testimonials = [
