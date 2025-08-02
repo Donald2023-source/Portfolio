@@ -1,29 +1,9 @@
 {
-  "version":  "0.0.0",
+  "version": "0.0.0",
   "builds": [
     {
       "src": "dist/**/*",
       "use": "@vercel/static"
     }
-  ],
-  "routes": [
-    {
-      "src": "/assets/(.*)",
-      "headers": {
-        "cache-control": "public, max-age=31536000, immutable"
-      },
-      "dest": "dist/assets/$1"
-    },
-    {
-      "src": "/(.*)",
-      "dest": "dist/index.html"
-    }
-  ],
-  "functions": {
-    "src": "api/**/*"
-  },
-  "env": {
-    "NODE_ENV": "production",
-    "VITE_API_URL": "@my-api-url"
-  }
+  ]
 }
