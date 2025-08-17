@@ -5,9 +5,9 @@ import { Link } from "react-router-dom";
 
 const ProjectCard = ({name, href, description, image}) => {
   return (
-    <div className="w-72 relative">
+    <div className="w-72 relative w-[20rem] ">
       <div className="relative rounded-2xl overflow-hidden">
-        <img className="h-64 w-72 object-cover rounded-2xl" src={image} alt="" />
+        <img className="h-64 w-full object-cover rounded-2xl" src={image} alt="" />
 
         <Link
           to={href}

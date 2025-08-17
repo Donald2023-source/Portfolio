@@ -87,7 +87,7 @@ const Home = () => {
 
           <About />
 
-          <div>
+          <div className="flex items-center justify-between my-10">
             {projects.map((project, idx) => (
               <ProjectCard
                 key={idx}
