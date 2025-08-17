@@ -7,11 +7,10 @@ export default {
   theme: {
     extend: {
       colors: {
-        mainColor: "#FFC107",
-        myGreen: "#006400", 
-        light: "#D9D9D9", 
+        my_black: "#191919",
+        text_gray: "#A7A7A7", 
         silver: "#E5E5E5", 
-        appGray: "#00000080"
+        appGray: "#363636"
       }
     },
   },
