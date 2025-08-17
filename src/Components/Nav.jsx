@@ -45,8 +45,8 @@ const Nav = () => {
         <div
           className={`${
             nav
-              ? "md:hidden absolute inset-0 flex flex-col h-screen items-center gap-5 bg-gradient-to-br from-black to-theBlack justify-center items-center translate-x-0 transition-all duration-500 ease-in-out"
-              : "md:hidden absolute inset-0 flex flex-col h-screen items-center gap-5 bg-gradient-to-br from-black to-theBlack justify-center items-center -translate-x-full"
+              ? "md:hidden absolute inset-0 flex flex-col h-screen items-center gap-5 bg-gradient-to-br from-black to-theBlack justify-center items-center -translate-x-0 transition-all duration-500 ease-in-out"
+              : "md:hidden absolute inset-0 flex flex-col h-screen items-center gap-5 bg-gradient-to-br from-black to-theBlack justify-center items-center -translate-x-full transition-all duration-500 ease-in-out"
           }`}
         >
           {navItems.map((item, idx) => (
