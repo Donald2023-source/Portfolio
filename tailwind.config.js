@@ -5,7 +5,7 @@ export default {
     extend: {
       colors: {
         theBlack: "#191919",
-        text_gray: "#A7A7A7",
+        textGray: "#A7A7A7",
         silver: "#E5E5E5",
         appGray: "#363636",
       },
