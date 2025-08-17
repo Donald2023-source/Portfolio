@@ -13,7 +13,11 @@ import tailwind from "../../public/Vector (3).png";
 import github from "../../public/Vector (2).png";
 import redux from "../../public/Vector (1).png";
 import next from "../../public/icons8-next.js-240.png";
+import ProjectCard from "../Components/ProjectCard";
 import { motion } from "framer-motion";
+import frentals from "../../public/Frentals.png";
+import appolo from "../../public/Appolo.png";
+import Ivote from "../../public/Ivote.png";
 const Home = () => {
   const techStack = [
     html,
@@ -28,6 +32,32 @@ const Home = () => {
     redux,
     next,
   ];
+
+  const projects = [
+    {
+      name: "Frentals",
+      href: "https://appolo-navy.vercel.app/",
+      description:
+        "Frentals is a simple, user-friendly platform that connects people to easily rent farm equipments",
+      image: frentals,
+    },
+
+    {
+      name: "Appolo",
+      href: "https://frentals.vercel.app/",
+      description:
+        "A clean and modern landing page that highlights the app’s ability to track expenses",
+      image: appolo,
+    },
+
+     {
+      name: "Ivote",
+      href: "https://ivote-gray.vercel.app/	",
+      description:
+        "A seamless voting platform that allows users to create and participate in polls effortlessly.",
+      image: Ivote  ,
+    },
+  ];
   return (
     <div className="max-w-7xl flex items-center justify-center w-full mx-auto px-1 sm:px-3 md:py-8 py-4">
       <div className="w-full">
@@ -36,7 +66,7 @@ const Home = () => {
         <div className=" p-3">
           <Hero />
 
-          <motion.div className="flex flex-wrap items-center justify-center py-4 md:gap-10 gap-7 my-10 border-gray-600 rounded-xl md:w-[80%] border mx-auto w-full">
+          <motion.div className="flex flex-wrap items-center justify-center py-4 md:gap-10 gap-7 my-10 border-gray-600 rounded-xl border mx-auto w-full">
             {techStack.map((item, idx) => (
               <div className="inline-block m-2" key={idx}>
                 <motion.img
@@ -56,6 +86,18 @@ const Home = () => {
           </motion.div>
 
           <About />
+
+          <div>
+            {projects.map((project, idx) => (
+              <ProjectCard
+                key={idx}
+                name={project?.name}
+                href={project?.href}
+                image={project?.image}
+                description={project?.description}
+              />
+            ))}
+          </div>
         </div>
       </div>
     </div>
