@@ -11,7 +11,7 @@ const Nav = () => {
   return (
     <div>
       <nav>
-        <img className="h-10 w-10" src={logo} alt="logo" />
+        <img className="h-16 object-cover rounded-full w-16" src={logo} alt="logo" />
       </nav>
     </div>
   );
