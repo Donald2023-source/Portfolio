@@ -28,14 +28,11 @@ export const AboutItems = [
   {
     title: "Education",
     items: [
-      "Current: BSc in Information Technology, Bingham University",
+      "Current: Pursing BSc in Information Technology, Bingham University",
     ],
   },
   {
     title: "Certifications",
-    items: [
-      "Nhub Frontend Developer",
-      "Udemy: Software Engineering",
-    ],
+    items: ["Nhub Frontend Developer", "Udemy: Software Engineering"],
   },
 ];
