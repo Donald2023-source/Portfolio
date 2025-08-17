@@ -1,28 +1,41 @@
 export const AboutItems = [
-  (Skills = [
-    "HTML",
-    "CSS",
-    "JavaScript",
-    "React",
-    "Node.js",
-    "TypeScript",
-    "NextJs",
-    "Tailwind CSS",
-    "Git",
-  ]),
-
-  (Tools = [
-    "Visual Studio Code",
-    "GitHub",
-    "Figma",
-    "Postman",
-    "Chrome DevTools",
-    "Netlify",
-    "Vercel",
-
-  ])
-
-  (Education = [
-    
-  ])
+  {
+    title: "Skills",
+    items: [
+      "HTML",
+      "CSS",
+      "JavaScript",
+      "React",
+      "Node.js",
+      "TypeScript",
+      "Next.js",
+      "Tailwind CSS",
+      "Git",
+    ],
+  },
+  {
+    title: "Tools",
+    items: [
+      "Visual Studio Code",
+      "GitHub",
+      "Figma",
+      "Postman",
+      "Chrome DevTools",
+      "Netlify",
+      "Vercel",
+    ],
+  },
+  {
+    title: "Education",
+    items: [
+      "Current: BSc in Information Technology, Bingham University",
+    ],
+  },
+  {
+    title: "Certifications",
+    items: [
+      "Nhub Frontend Developer",
+      "Udemy: Software Engineering",
+    ],
+  },
 ];
