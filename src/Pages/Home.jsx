@@ -98,7 +98,7 @@ const Home = () => {
               />
             ))}
           </div>
-          
+          <ContactForm />
         </div>
       </div>
     </div>
