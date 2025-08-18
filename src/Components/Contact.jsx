@@ -9,7 +9,7 @@ const ContactForm = () => {
   }
   return (
     <div className="flex items-center justify-between my-5 gap-10 ">
-      <div className="w-[40%] pr-4">
+      <div className="w-[50%] pr-4">
         <h2 className="font-bold text-xl py-2">Contact Me</h2>
         <p className="text-textGray leading-7">
           I'm currently looking for new opportunities, my inbox is always open.
@@ -21,18 +21,27 @@ const ContactForm = () => {
           <Link to="https://github.com/Donald2023-source">
             <FaGithub />
           </Link>
-          <Link to>
+          <Link to="https://www.linkedin.com/in/donald-yusuf-950585292/">
             <CiLinkedin />
           </Link>
         </div>
       </div>
-      <form className="flex-1" onSubmit={handleSubmit}>
-        <fieldset className="flex flex-col gap-1">
-          <label htmlFor="email">Email Address</label>
-          <input id="email" type="email" name="email" />
+      <form className="flex-1 flex p-3 flex-col gap-5 border border-white/20" onSubmit={handleSubmit}>
+        <fieldset className="flex w-[65%] flex-col gap-1">
+          <label className="font-semibold" htmlFor="email">Email</label>
+          <input
+            className="py-4 rounded-xl bg-white/10 text-white px-4 outline-none"
+            id="email"
+            type="email"
+            name="email"
+          />
           <ValidationError prefix="Email" field="email" errors={state.errors} />
         </fieldset>
-        <textarea id="message" name="message" />
+        <textarea
+          className="py-4 rounded-xl bg-white/10 text-white px-4 outline-none"
+          id="message"
+          name="message"
+        />
         <ValidationError
           prefix="Message"
           field="message"
