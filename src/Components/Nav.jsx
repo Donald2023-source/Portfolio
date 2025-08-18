@@ -30,14 +30,14 @@ const Nav = () => {
       top: elementPosition - offset,
       behavior: "smooth",
     });
-    setNav(false); 
+    setNav(false);
   };
 
   return (
-    <div className="flex items-center justify-center w-full mx-auto">
-      <nav className="flex items-center justify-between w-full mx-auto">
+    <div className="flex items-center justify-center p-4 w-full mx-auto">
+      <nav className="flex fixed p-4 shadow bg-theBlack z-20 top-0  items-center justify-between w-full mx-auto">
         <img
-          className="md:h-16 h-14 w-14 object-cover rounded-full md:w-16"
+          className="md:h-15 h-14 w-14 object-cover rounded-full md:w-15"
           src={logo}
           alt="logo"
         />
@@ -61,8 +61,8 @@ const Nav = () => {
         <div
           className={`${
             nav
-              ? "md:hidden absolute inset-0 flex flex-col h-screen items-center gap-5 bg-gradient-to-br from-black to-theBlack justify-center items-center -translate-x-0 transition-all duration-500 ease-in-out"
-              : "md:hidden absolute inset-0 flex flex-col h-screen items-center gap-5 bg-gradient-to-br from-black to-theBlack justify-center items-center -translate-x-full transition-all duration-500 ease-in-out"
+              ? "md:hidden fixed inset-0 flex flex-col h-full items-center gap-5 bg-gradient-to-br from-black to-theBlack justify-center items-center -translate-x-0 transition-all duration-500 ease-in-out"
+              : "md:hidden fixed inset-0 flex flex-col h-full items-center gap-5 bg-gradient-to-br from-black to-theBlack justify-center items-center -translate-x-full transition-all duration-500 ease-in-out"
           }`}
         >
           {navItems.map((item, idx) => (
