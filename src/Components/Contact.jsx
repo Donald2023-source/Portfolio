@@ -8,8 +8,8 @@ const ContactForm = () => {
     return <p>Thanks for joining!</p>;
   }
   return (
-    <div className="flex items-center justify-between my-5 gap-10 ">
-      <div className="w-[50%] pr-4">
+    <div className="flex md:flex-row flex-col items-center justify-between mt-32 gap-10 ">
+      <div className="md:w-[50%] flex flex-col md:items-start items-center md:text-left text-center text-sm md:text-base pr-4">
         <h2 className="font-bold text-xl py-2">Contact Me</h2>
         <p className="text-textGray leading-7">
           I'm currently looking for new opportunities, my inbox is always open.
@@ -27,10 +27,10 @@ const ContactForm = () => {
         </div>
       </div>
       <form
-        className="flex-1 flex p-3 flex-col gap-5 border border-white/20"
+        className="flex-1 flex p-4 w-full flex-col gap-8 md:text-base text-sm border-y border-white/10"
         onSubmit={handleSubmit}
       >
-        <fieldset className="flex w-[65%] flex-col gap-1">
+        <fieldset className="flex md:w-[65%] flex-col gap-1">
           <label className="font-semibold" htmlFor="email">
             Email
           </label>
@@ -54,7 +54,11 @@ const ContactForm = () => {
           field="message"
           errors={state.errors}
         />
-        <button type="submit" disabled={state.submitting}>
+        <button
+          className="w-fit flex items-center justify-center mx-auto px-10 py-3 bg-purple-800 rounded-xl hover:scale-95 transition-all"
+          type="submit"
+          disabled={state.submitting}
+        >
           Submit
         </button>
       </form>
