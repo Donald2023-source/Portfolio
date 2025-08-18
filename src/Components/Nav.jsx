@@ -17,6 +17,20 @@ const Nav = () => {
 
   const [nav, setNav] = useState(false);
 
+  const handleScroll = (e, href) => {
+    e.preventDefault()
+    const targetId = href.replace("#", "")
+    const element = document.getElementById(targetId)
+    if(element) {
+      const offset = 80
+      const elementPosition = element.getBoundingClientRect().top + windowScrollY;
+      window.scrollTo({
+        top: elementPosition - offset;
+        behaviour: smooth
+      })
+    }
+  }
+
   return (
     <div className="flex items-center justify-center w-full mx-auto">
       <nav className="flex items-center justify-between w-full mx-auto">

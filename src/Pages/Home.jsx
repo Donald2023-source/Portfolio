@@ -65,7 +65,7 @@ const Home = () => {
         <Nav />
 
         <div className=" p-3">
-          <Hero />
+         
 
           <motion.div className="flex flex-wrap items-center justify-center py-4 md:gap-10 gap-7 my-10 border-gray-600 rounded-xl border mx-auto w-full">
             {techStack.map((item, idx) => (
@@ -88,7 +88,7 @@ const Home = () => {
 
           <About />
 
-          <div className="flex items-center justify-between my-10">
+          <div className="flex md:flex-row flex-col gap-10 items-center justify-between my-10">
             {projects.map((project, idx) => (
               <ProjectCard
                 key={idx}
