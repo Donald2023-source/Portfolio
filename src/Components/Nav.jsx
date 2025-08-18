@@ -25,7 +25,7 @@ const Nav = () => {
       const offset = 80
       const elementPosition = element.getBoundingClientRect().top + windowScrollY;
       window.scrollTo({
-        top: elementPosition - offset;
+        top: elementPosition - offset,
         behaviour: smooth
       })
     }
