@@ -26,14 +26,20 @@ const ContactForm = () => {
           </Link>
         </div>
       </div>
-      <form className="flex-1 flex p-3 flex-col gap-5 border border-white/20" onSubmit={handleSubmit}>
+      <form
+        className="flex-1 flex p-3 flex-col gap-5 border border-white/20"
+        onSubmit={handleSubmit}
+      >
         <fieldset className="flex w-[65%] flex-col gap-1">
-          <label className="font-semibold" htmlFor="email">Email</label>
+          <label className="font-semibold" htmlFor="email">
+            Email
+          </label>
           <input
             className="py-4 rounded-xl bg-white/10 text-white px-4 outline-none"
             id="email"
             type="email"
             name="email"
+            placeholder="example@gmail.com"
           />
           <ValidationError prefix="Email" field="email" errors={state.errors} />
         </fieldset>
@@ -41,6 +47,7 @@ const ContactForm = () => {
           className="py-4 rounded-xl bg-white/10 text-white px-4 outline-none"
           id="message"
           name="message"
+          placeholder="Message ..."
         />
         <ValidationError
           prefix="Message"
