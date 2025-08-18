@@ -18,18 +18,19 @@ const Nav = () => {
   const [nav, setNav] = useState(false);
 
   const handleScroll = (e, href) => {
-    e.preventDefault()
-    const targetId = href.replace("#", "")
-    const element = document.getElementById(targetId)
-    if(element) {
-      const offset = 80
-      const elementPosition = element.getBoundingClientRect().top + windowScrollY;
+    e.preventDefault();
+    const targetId = href.replace("#", "");
+    const element = document.getElementById(targetId);
+    if (element) {
+      const offset = 80;
+      const elementPosition =
+        element.getBoundingClientRect().top + windowScrollY;
       window.scrollTo({
         top: elementPosition - offset,
-        behaviour: smooth
-      })
+        behaviour: smooth,
+      });
     }
-  }
+  };
 
   return (
     <div className="flex items-center justify-center w-full mx-auto">
@@ -66,6 +67,7 @@ const Nav = () => {
           {navItems.map((item, idx) => (
             <div key={idx}>
               <Link
+                onClick={(e) => handleScroll(e, item?.path)}
                 className={`p-3 flex ${
                   pathname === item?.path
                     ? "text-white font-bold"

@@ -64,9 +64,7 @@ const Home = () => {
       <div className="w-full">
         <Nav />
 
-        <div className=" p-3">
-         
-
+        <div id="#tech_stack" className=" p-3">
           <motion.div className="flex flex-wrap items-center justify-center py-4 md:gap-10 gap-7 my-10 border-gray-600 rounded-xl border mx-auto w-full">
             {techStack.map((item, idx) => (
               <div className="inline-block m-2" key={idx}>
@@ -86,9 +84,14 @@ const Home = () => {
             ))}
           </motion.div>
 
-          <About />
+          <div className="w-full" id="#about">
+            <About />
+          </div>
 
-          <div className="flex md:flex-row flex-col gap-10 items-center justify-between my-10">
+          <div
+            id="#projects"
+            className="flex md:flex-row flex-col gap-10 items-center justify-between my-10"
+          >
             {projects.map((project, idx) => (
               <ProjectCard
                 key={idx}
@@ -99,7 +102,9 @@ const Home = () => {
               />
             ))}
           </div>
-          <ContactForm />
+          <div className="w-full" id="#contact">
+            <ContactForm />
+          </div>
         </div>
       </div>
     </div>
