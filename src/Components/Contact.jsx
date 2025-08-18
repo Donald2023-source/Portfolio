@@ -21,7 +21,7 @@ const ContactForm = () => {
           <Link to="https://github.com/Donald2023-source">
             <FaGithub />
           </Link>
-          <Link>
+          <Link to>
             <CiLinkedin />
           </Link>
         </div>
