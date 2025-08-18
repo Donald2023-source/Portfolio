@@ -17,19 +17,20 @@ const Nav = () => {
 
   const [nav, setNav] = useState(false);
 
-  const handleScroll = (e, href) => {
+  const handleScroll = (e, path) => {
     e.preventDefault();
-    const targetId = href.replace("#", "");
+    const targetId = path.replace("#", "");
     const element = document.getElementById(targetId);
-    if (element) {
-      const offset = 80;
-      const elementPosition =
-        element.getBoundingClientRect().top + windowScrollY;
-      window.scrollTo({
-        top: elementPosition - offset,
-        behaviour: smooth,
-      });
-    }
+    if (!element) return;
+
+    const offset = 80;
+    const elementPosition =
+      element.getBoundingClientRect().top + window.scrollY;
+    window.scrollTo({
+      top: elementPosition - offset,
+      behavior: "smooth",
+    });
+    setNav(false); 
   };
 
   return (
@@ -66,17 +67,17 @@ const Nav = () => {
         >
           {navItems.map((item, idx) => (
             <div key={idx}>
-              <Link
+              <a
                 onClick={(e) => handleScroll(e, item?.path)}
                 className={`p-3 flex ${
                   pathname === item?.path
                     ? "text-white font-bold"
                     : "text-textGray hover:text-white transition-all hover:font-bold"
                 }`}
-                to={item?.path}
+                href={item?.path}
               >
                 {item?.name}
-              </Link>
+              </a>
             </div>
           ))}
           <h4

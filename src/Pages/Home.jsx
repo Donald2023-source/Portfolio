@@ -63,7 +63,7 @@ const Home = () => {
     <div className="max-w-7xl flex items-center justify-center w-full mx-auto px-1 sm:px-3 md:py-8 py-4">
       <div className="w-full">
         <Nav />
-
+        <Hero />
         <div id="#tech_stack" className=" p-3">
           <motion.div className="flex flex-wrap items-center justify-center py-4 md:gap-10 gap-7 my-10 border-gray-600 rounded-xl border mx-auto w-full">
             {techStack.map((item, idx) => (
@@ -84,12 +84,12 @@ const Home = () => {
             ))}
           </motion.div>
 
-          <div className="w-full" id="#about">
+          <div className="w-full" id="about">
             <About />
           </div>
 
           <div
-            id="#projects"
+            id="projects"
             className="flex md:flex-row flex-col gap-10 items-center justify-between my-10"
           >
             {projects.map((project, idx) => (
@@ -102,7 +102,7 @@ const Home = () => {
               />
             ))}
           </div>
-          <div className="w-full" id="#contact">
+          <div className="w-full" id="contact">
             <ContactForm />
           </div>
         </div>
