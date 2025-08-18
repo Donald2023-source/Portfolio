@@ -18,6 +18,7 @@ import { motion } from "framer-motion";
 import frentals from "../../public/Frentals.png";
 import appolo from "../../public/Appolo.png";
 import Ivote from "../../public/Ivote.png";
+import ContactForm from "../Components/Contact";
 const Home = () => {
   const techStack = [
     html,
@@ -50,12 +51,12 @@ const Home = () => {
       image: appolo,
     },
 
-     {
+    {
       name: "Ivote",
       href: "https://ivote-gray.vercel.app/	",
       description:
         "A seamless voting platform that allows users to create and participate in polls effortlessly.",
-      image: Ivote  ,
+      image: Ivote,
     },
   ];
   return (
