@@ -2,7 +2,7 @@ import { useForm, ValidationError } from "@formspree/react";
 import { FaGithub } from "react-icons/fa";
 import { CiLinkedin } from "react-icons/ci";
 import { Link } from "react-router-dom";
-impot { toast } from "react-toastify";
+import { toast } from "react-toastify";
 const ContactForm = () => {
   const [state, handleSubmit] = useForm("xpwleobb");
   if (state.succeeded) {
