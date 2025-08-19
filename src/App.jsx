@@ -14,7 +14,7 @@ const App = () => {
       transition={{ duration: 1.3 }}
     >
       <BrowserRouter>
-        <ToastContainer />
+        <ToastContainer position="top-right" theme="colored" autoClose={3000} />
         <Routes>
           <Route path="/" element={<Home />} />
         </Routes>

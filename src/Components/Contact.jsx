@@ -6,8 +6,9 @@ import { toast } from "react-toastify";
 const ContactForm = () => {
   const [state, handleSubmit] = useForm("xpwleobb");
   if (state.succeeded) {
-    return toast.success("Message sent successfully");
+    return alert("Message sent successfully");
   }
+
   return (
     <div className="flex md:flex-row flex-col items-center justify-between mt-32 gap-10 ">
       <div className="md:w-[50%] flex flex-col md:items-start items-center md:text-left text-center text-sm md:text-base pr-4">
@@ -60,7 +61,7 @@ const ContactForm = () => {
           type="submit"
           disabled={state.submitting}
         >
-          Submit
+          {state.submitting ? "Sending..." : "Send Message"}
         </button>
       </form>
     </div>

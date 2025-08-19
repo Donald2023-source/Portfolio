@@ -3,7 +3,7 @@ import Avatar from "../../public/Avatar.jpg";
 const Hero = () => {
   return (
     <div>
-      <div className="flex  md:flex-row flex-col  items-center w-full items-center justify-between gap-5">
+      <div className="flex px-4  md:flex-row flex-col  items-center w-full items-center justify-between gap-5">
         <div className="w-full md:w-[45%] flex flex-col md:items-start items-center gap-2">
           <h1 className="text-3xl font-semibold">Hi 👋</h1>
           <h1 className="text-4xl leading-12 font-extrabold py-2">
