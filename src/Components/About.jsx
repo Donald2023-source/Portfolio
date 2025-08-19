@@ -35,7 +35,7 @@ const About = () => {
       </div>
 
       <div className="flex items-center md:flex-row flex-col justify-center gap-20 w-[60%] mx-auto md:w-full py-12 mt-10">
-        <div className="w-[50%]">
+        <div className="md:w-[50%] w-full">
           <img className="rounded-xl" src={img} alt="img" />
         </div>
 

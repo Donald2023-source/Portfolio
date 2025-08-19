@@ -60,11 +60,11 @@ const Home = () => {
     },
   ];
   return (
-    <div className="max-w-7xl flex items-center justify-center w-full mx-auto px-1 sm:px-3 md:py-8 py-4">
+    <div className="max-w-6xl 2xl:max-w-6xl flex items-center justify-center w-full mx-auto px-1 sm:px-3 md:py-8 py-4">
       <div className="w-full">
         <Nav />
         <Hero />
-        <div id="#tech_stack" className=" p-3">
+        <div id="tech-stack" className=" p-3">
           <motion.div className="flex flex-wrap items-center justify-center py-4 md:gap-10 gap-7 my-10 border-gray-600 rounded-xl border mx-auto w-full">
             {techStack.map((item, idx) => (
               <div className="inline-block m-2" key={idx}>

@@ -34,8 +34,8 @@ const Nav = () => {
   };
 
   return (
-    <div className="flex items-center justify-center p-4 w-full mx-auto">
-      <nav className="flex fixed p-4 shadow bg-theBlack z-20 top-0  items-center justify-between w-full mx-auto">
+    <div className="flex items-center max-w-6xl border md:mb-1 mb-10 justify-center p-4 w-full mx-auto">
+      <nav className="flex fixed max-w-6xl p-2 shadow bg-theBlack z-20 top-0  items-center justify-between w-full mx-auto">
         <img
           className="md:h-15 h-14 w-14 object-cover rounded-full md:w-15"
           src={logo}
@@ -87,10 +87,14 @@ const Nav = () => {
             X
           </h4>
         </div>
-        <FaBars
-          onClick={() => setNav(true)}
-          className="text-xl cursor-pointer hover:scale-95 transition md:hidden block"
-        />
+        {nav ? (
+          ""
+        ) : (
+          <FaBars
+            onClick={() => setNav(true)}
+            className="text-xl cursor-pointer hover:scale-95 transition md:hidden block"
+          />
+        )}
       </nav>
     </div>
   );
