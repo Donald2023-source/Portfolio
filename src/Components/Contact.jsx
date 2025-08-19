@@ -2,10 +2,11 @@ import { useForm, ValidationError } from "@formspree/react";
 import { FaGithub } from "react-icons/fa";
 import { CiLinkedin } from "react-icons/ci";
 import { Link } from "react-router-dom";
+impot { toast } from "react-toastify";
 const ContactForm = () => {
   const [state, handleSubmit] = useForm("xpwleobb");
   if (state.succeeded) {
-    return <p>Thanks for joining!</p>;
+    return toast.success("Message sent successfully");
   }
   return (
     <div className="flex md:flex-row flex-col items-center justify-between mt-32 gap-10 ">
