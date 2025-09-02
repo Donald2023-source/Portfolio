@@ -37,7 +37,7 @@ const Home = () => {
   const projects = [
     {
       name: "Frentals",
-      href: "https://appolo-navy.vercel.app/https://frentals.vercel.app/",
+      href: "https://frentals.vercel.app/",
       description:
         "Frentals is a simple, user-friendly platform that connects people to easily rent farm equipments",
       image: frentals,
@@ -45,7 +45,7 @@ const Home = () => {
 
     {
       name: "Appolo",
-      href: "",
+      href: "https://appolo-navy.vercel.app/",
       description:
         "A clean and modern landing page that highlights the app’s ability to track expenses",
       image: appolo,
