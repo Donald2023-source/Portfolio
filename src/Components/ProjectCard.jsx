@@ -2,9 +2,7 @@ import { motion } from "framer-motion";
 import { FaEye } from "react-icons/fa";
 import { Link } from "react-router-dom";
 
-const stack = ["Nextjs", "Tailwind", "Framer-motion", "Typescript", "Shadcn"];
-
-const ProjectCard = ({ name, href, description, image, idx }) => {
+const ProjectCard = ({ name, href, description, image, idx, stack }) => {
   return (
     <motion.div
       initial={{ opacity: 0, y: 20 }}

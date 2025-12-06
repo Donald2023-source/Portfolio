@@ -41,6 +41,7 @@ const Home = () => {
       description:
         "Frentals is a simple, user-friendly platform that connects people to easily rent farm equipments",
       image: frentals,
+      stack: ["Nextjs", "Tailwind", "TypeScript", "Firebase", "Shadcn"],
     },
 
     {
@@ -49,6 +50,8 @@ const Home = () => {
       description:
         "A clean and modern landing page that highlights the app’s ability to track expenses",
       image: appolo,
+
+      stack: ["Nextjs", "Tailwind", "Framer motion"],
     },
 
     {
@@ -57,6 +60,7 @@ const Home = () => {
       description:
         "A seamless voting platform that allows users to create and participate in polls effortlessly.",
       image: Ivote,
+      stack: ["React", "Tailwind", "Javascript", "Framer-motion"],
     },
   ];
   return (
@@ -101,6 +105,7 @@ const Home = () => {
               image={project?.image}
               description={project?.description}
               idx={idx}
+              stack={project?.stack}
             />
           ))}
         </div>
