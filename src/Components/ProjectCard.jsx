@@ -1,11 +1,17 @@
-import React from "react";
-import img from "../../public/Appolo.png";
+import { motion } from "framer-motion";
 import { FaEye } from "react-icons/fa";
 import { Link } from "react-router-dom";
 
-const ProjectCard = ({ name, href, description, image }) => {
+const stack = ["Nextjs", "Tailwind", "Framer-motion", "Typescript", "Shadcn"];
+
+const ProjectCard = ({ name, href, description, image, idx }) => {
   return (
-    <div className="w-72 my-7 relative w-[20rem] ">
+    <motion.div
+      initial={{ opacity: 0, y: 20 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      transition={{ duration: 2, delay: idx * 0.3 }}
+      className="my-7 relative w-[20rem] "
+    >
       <div className="relative rounded-2xl overflow-hidden">
         <img
           className="h-64 w-full object-cover rounded-2xl"
@@ -25,8 +31,23 @@ const ProjectCard = ({ name, href, description, image }) => {
         <p className="text-sm leading-7 text-textGray">{description}</p>
       </div>
 
-      <div></div>
-    </div>
+      <div>
+        {
+          <div className="flex flex-wrap gap-2 mt-3">
+            {stack.map((tech, idx) => (
+              <motion.span
+                initial={{ x: 10, y: 1 }}
+                animate={{ x: 10, y: 0 }}
+                transition={{ duration: 1, repeat: Infinity }}
+                className="py-1 px-3 border border-purple-500/30 text-sm rounded-full"
+              >
+                {tech}
+              </motion.span>
+            ))}
+          </div>
+        }
+      </div>
+    </motion.div>
   );
 };
 

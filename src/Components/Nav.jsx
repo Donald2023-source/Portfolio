@@ -44,16 +44,16 @@ const Nav = () => {
         <div className="md:flex hidden items-center">
           {navItems.map((item, idx) => (
             <div key={idx}>
-              <Link
+              <a
                 className={`p-3 flex ${
                   pathname === item?.path
                     ? "text-white font-bold"
                     : "text-textGray hover:text-white transition-all hover:font-bold"
                 }`}
-                to={item?.path}
+                href={item?.path}
               >
                 {item?.name}
-              </Link>
+              </a>
             </div>
           ))}
         </div>
@@ -61,8 +61,8 @@ const Nav = () => {
         <div
           className={`${
             nav
-              ? "md:hidden fixed inset-0 flex flex-col h-full items-center gap-5 bg-gradient-to-br from-black to-theBlack justify-center items-center -translate-x-0 transition-all duration-500 ease-in-out"
-              : "md:hidden fixed inset-0 flex flex-col h-full items-center gap-5 bg-gradient-to-br from-black to-theBlack justify-center items-center -translate-x-full transition-all duration-500 ease-in-out"
+              ? "md:hidden fixed inset-0 flex flex-col h-full items-center gap-5  backdrop-blur  bg-theBlack/60   opacity-1 justify-center  -translate-x-0 transition-all duration-500 ease-in-out"
+              : "md:hidden fixed inset-0 flex flex-col opacity-0 h-full gap-5 bg-gradient-to-br from-black to-theBlack justify-center items-center -translate-x-full transition-all duration-500 ease-in-out"
           }`}
         >
           {navItems.map((item, idx) => (

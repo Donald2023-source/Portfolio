@@ -83,28 +83,30 @@ const Home = () => {
               </div>
             ))}
           </motion.div>
+        </div>
 
-          <div className="w-full" id="about">
-            <About />
-          </div>
+        <div className="w-full" id="about">
+          <About />
+        </div>
 
-          <div
-            id="projects"
-            className="flex md:flex-row flex-col gap-10 items-center justify-between my-10"
-          >
-            {projects.map((project, idx) => (
-              <ProjectCard
-                key={idx}
-                name={project?.name}
-                href={project?.href}
-                image={project?.image}
-                description={project?.description}
-              />
-            ))}
-          </div>
-          <div className="w-full" id="contact">
-            <ContactForm />
-          </div>
+        <div
+          id="projects"
+          className="flex md:flex-row flex-col gap-10 items-center justify-between my-10"
+        >
+          {projects.map((project, idx) => (
+            <ProjectCard
+              key={idx}
+              name={project?.name}
+              href={project?.href}
+              image={project?.image}
+              description={project?.description}
+              idx={idx}
+            />
+          ))}
+        </div>
+
+        <div className="w-full" id="contact">
+          <ContactForm />
         </div>
       </div>
     </div>
