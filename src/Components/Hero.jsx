@@ -9,7 +9,8 @@ const Hero = () => {
           <h1 className="text-4xl leading-12 font-extrabold py-2">
             I am Donald Yusuf{" "}
           </h1>
-          <h1 className="text-textGray py-2 md:text-base text-sm md:text-left text-center leading-8">
+
+          <h1 className="text-textGray py-2 md:text-base text-sm md:text-left text-center md:leading-9 leading-8">
             I am a creative and detail-oriented frontend developer with a
             passion for designing and building seamless user experiences. I
             enjoy bringing ideas to life through clean, responsive, and visually
@@ -22,6 +23,15 @@ const Hero = () => {
           alt=""
         />
       </div>
+      <a
+        href="/Donald-Resume.pdf"
+        download="Donald_Yusuf.pdf"
+        className="px-1 inline-block border border-gray-100/40 py-1 w-full sm:w-fit rounded-full bg-gradient-to-br from-primary-500 to-secondary-500 hover:bg-slate-800 text-white mt-3"
+      >
+        <span className="block bg-[#121212] hover:bg-slate-800 rounded-full px-5 py-2">
+          Download CV
+        </span>
+      </a>
     </div>
   );
 };

@@ -11,6 +11,7 @@ export const AboutItems = [
       "Next.js",
       "Tailwind CSS",
       "Git",
+      "Firebase",
     ],
   },
   {
